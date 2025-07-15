@@ -29,9 +29,9 @@ function App() {
           {/* Sidebar */}
           <div className="hidden lg:block w-[320px] pt-4 sticky top-20">
             <Profile 
-              username="beautyamy.ai"
-              name="Amy Lumiere"
-              imageUrl="https://i.ibb.co/ymN2m0CM/20250502-0208-image.png"
+              username="beautyeva.ai"
+              name="Eva Lumiere"
+              imageUrl="https://i.ibb.co/4ZhTy0TC/8.jpg"
             />
             <Suggestions />
             <Footer />
