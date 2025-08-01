@@ -18,222 +18,226 @@ export const posts: Post[] = [
   {
     "id": "1",
     "username": "beautyeva.ai",
-    "userImage": "https://i.ibb.co/4ZhTy0TC/8.jpg",
+    "userImage": "https://i.ibb.co/xSr0Zrmr/9.jpg",
     "location": "Paris, France",
     "media": {
       "type": "image",
-      "url": "https://i.ibb.co/mCL3pRC5/1.jpg"
+      "url": "https://i.ibb.co/3Y1CLgh7/1.jpg"
     },
-    "caption": "my collarbone said hello today. I wasn’t even trying, just sat in the light for a bit.",
+    "caption": "This body deserves soft light and softer words.",
     "likes": 10343,
     "timestamp": "2 HOURS AGO",
     "comments": [
-      { "username": "sunlitframes", "text": "this whole vibe is a soft flex" },
-      { "username": "slowsculpt", "text": "how are you glowing without effort 😩" },
-      { "username": "breathe.and.bones", "text": "the collarbone really *did* show up huh" },
-      { "username": "feathercoreclub", "text": "you make stillness look like a statement" },
-      { "username": "lightandlean", "text": "quietly stunning" },
-      { "username": "linenstrength", "text": "🌸💫" },
-      { "username": "formandfeeling", "text": "everything here is giving intentional softness" },
-      { "username": "satdowntostay", "text": "when the light and the lines line up perfectly" },
-      { "username": "corecalm", "text": "I swear this pic just lowered my blood pressure" },
-      { "username": "graceinpause", "text": "🕯️☁️" }
+      { "username": "zoe16", "text": "Unfolding beauty" },
+      { "username": "daniel89", "text": "Free in stillness" },
+      { "username": "amber26", "text": "Serene presence" },
+      { "username": "colin02", "text": "She glows in lightness" },
+      { "username": "ivy33", "text": "Quiet grace radiates" },
+      { "username": "brian_81", "text": "Subtle power flows" },
+      { "username": "luna78", "text": "Floaty + fierce" },
+      { "username": "harry90", "text": "Elegant without effort" },
+      { "username": "melissa13", "text": "Gentle is bold" },
+      { "username": "felix_05", "text": "Small frame, strong soul" }
     ]
   },
   {
     "id": "2",
     "username": "beautyeva.ai",
-    "userImage": "https://i.ibb.co/4ZhTy0TC/8.jpg",
+    "userImage": "https://i.ibb.co/xSr0Zrmr/9.jpg",
     "location": "Paris, France",
     "media": {
       "type": "image",
-      "url": "https://i.ibb.co/4w1NbC8f/2.jpg"
+      "url": "https://i.ibb.co/JjqXd5XQ/2.jpg"
     },
-    "caption": "some days I notice my waist more. not for anyone else, just because the light caught it and I was still for once.",
+    "caption": "I don’t chase beauty. I carry it.",
     "likes": 10020,
     "timestamp": "2025/05/01",
     "comments": [
-      { "username": "softlinesdaily", "text": "it’s the waist and the stillness for me" },
-      { "username": "laceandlatte", "text": "you didn’t even move and still gave everything" },
-      { "username": "posturepause", "text": "your body language is a whole mood" },
-      { "username": "feathercore", "text": "you just stood there and I felt seen" },
-      { "username": "graceedit", "text": "subtle and strong in the same frame" },
-      { "username": "held.by.light", "text": "🌬️✨" },
-      { "username": "slightlines", "text": "this is what gentle presence looks like" },
-      { "username": "barelyposed", "text": "no angles needed when it’s just *you*" },
-      { "username": "formandstill", "text": "the elegance in your ease 🔥" },
-      { "username": "refinedpause", "text": "🕊️💫" }
+      { "username": "sasha_01", "text": "Carried in calm" },
+      { "username": "frank88", "text": "Light body, full soul" },
+      { "username": "belle14", "text": "💫🌤️" },
+      { "username": "gavin76", "text": "She’s her own standard" },
+      { "username": "paige66", "text": "Fierce in her own way" },
+      { "username": "travis04", "text": "Presence without effort" },
+      { "username": "claire10", "text": "Built on peace" },
+      { "username": "vince_27", "text": "She moves quiet and proud" },
+      { "username": "hollie38", "text": "Her frame, her fire" },
+      { "username": "jude_12", "text": "Beauty doesn't beg" }
     ]
   },
-  { 
+  {
     "id": "3",
     "username": "beautyeva.ai",
-    "userImage": "https://i.ibb.co/4ZhTy0TC/8.jpg",
+    "userImage": "https://i.ibb.co/xSr0Zrmr/9.jpg",
     "location": "Tuscany, Italy",
     "media": {
-    "type": "image",
-    "url": "https://i.ibb.co/3mXWb9cY/3.jpg"
+      "type": "image",
+      "url": "https://i.ibb.co/R4J0XGzx/3.jpg"
     },
-    "caption": "felt the wind on my ribs today. sometimes that’s enough to remind me I’m here.",
+    "caption": "Power isn’t just in posture—it’s in presence.",
     "likes": 9724,
     "timestamp": "2025/04/10",
     "comments": [
-      { "username": "stillinthelines", "text": "this caption gave me chills 🫶" },
-      { "username": "lightrooted", "text": "so simple and so real it hurts (in the good way)" },
-      { "username": "threadandtone", "text": "your presence is always so soft but clear" },
-      { "username": "leanwithlight", "text": "the ribs, the wind, the moment. everything." },
-      { "username": "earthfitenergy", "text": "barely moving but still so grounded" },
-      { "username": "windandform", "text": "🌿🌬️" },
-      { "username": "heldinthequiet", "text": "okay this is basically poetry now" },
-      { "username": "gentlecontrol", "text": "this made me exhale a little deeper" },
-      { "username": "bodyasbreath", "text": "honestly iconic in the calmest way" },
-      { "username": "coreattuned", "text": "🕊️✨" }
+      { "username": "ivy25", "text": "Light, not lacking" },
+      { "username": "leo_52", "text": "Every curve belongs" },
+      { "username": "faye_67", "text": "Natural and new" },
+      { "username": "ryan94", "text": "Poised with purpose" },
+      { "username": "matt.47", "text": "Every inch earned" },
+      { "username": "amy_71", "text": "Stillness has strength" },
+      { "username": "luke23", "text": "Body is enough" },
+      { "username": "jake.12", "text": "Elegantly held" },
+      { "username": "faye_28", "text": "Float and flow" },
+      { "username": "amy14", "text": "Lines of light" }
     ]
   },
   {
     "id": "4",
     "username": "beautyeva.ai",
-    "userImage": "https://i.ibb.co/4ZhTy0TC/8.jpg",
+    "userImage": "https://i.ibb.co/xSr0Zrmr/9.jpg",
     "location": "Los Angeles, CA",
     "media": {
       "type": "image",
-      "url": "https://i.ibb.co/R446Hh6S/4.jpg"
+      "url": "https://i.ibb.co/vCM4q37b/4.jpg"
     },
-    "caption": "the dress sat different today. maybe it’s the posture. maybe it’s the way I’m finally breathing deeper again.",
+    "caption": "Comfort in your own skin is elegance.",
     "likes": 11248,
     "timestamp": "2025/03/25",
     "comments": [
-      { "username": "drapedandready", "text": "this caption touched my spine 😮‍💨" },
-      { "username": "linenandlight", "text": "the fit, the posture, the peace. all of it." },
-      { "username": "softsustained", "text": "when your body starts to feel like home again 🫶" },
-      { "username": "sitslight", "text": "you didn’t pose, you just belonged" },
-      { "username": "threadedpresence", "text": "this is the most elegant exhale I’ve seen" },
-      { "username": "carryingquiet", "text": "🌿🕊️" },
-      { "username": "slowbuiltform", "text": "the neckline + the moment = perfect" },
-      { "username": "heldgently", "text": "beauty that starts from posture hits different" },
-      { "username": "poisepractice", "text": "okay this one I’m saving for alignment inspo" },
-      { "username": "softbreathclub", "text": "✨🤍" }
+      { "username": "ben.37", "text": "Silhouette of strength" },
+      { "username": "ryan.28", "text": "Takes up space softly" },
+      { "username": "dan67", "text": "Feminine and firm" },
+      { "username": "candy.5", "text": "Confidence in calm" },
+      { "username": "nora17", "text": "Minimal but mighty" },
+      { "username": "jake55", "text": "Subtle power" },
+      { "username": "candy.72", "text": "💫🌾" },
+      { "username": "tom_25", "text": "Power, unspoken" },
+      { "username": "lily10", "text": "Shape of serenity" },
+      { "username": "ruby.87", "text": "Strength in stillness" }
     ]
   },
   {
     "id": "5",
     "username": "beautyeva.ai",
-    "userImage": "https://i.ibb.co/4ZhTy0TC/8.jpg",
+    "userImage": "https://i.ibb.co/xSr0Zrmr/9.jpg",
     "location": "Barcelona, Spain",
     "media": {
       "type": "image",
-      "url": "https://i.ibb.co/LDTR1Ds9/5.jpg"
+      "url": "https://i.ibb.co/sJXxnY4p/5.jpg"
     },
-    "caption": "I’ve been sitting in my body a little quieter lately. no performance, just awareness.",
+    "caption": "My body is art, not a project.",
     "likes": 10877,
     "timestamp": "2025/03/01",
     "comments": [
-      { "username": "feltframe", "text": "this caption feels like silence I needed" },
-      { "username": "slownessclub", "text": "presence without the push 💭" },
-      { "username": "softarchitecture", "text": "not everything needs to announce itself to be strong" },
-      { "username": "leanmornings", "text": "you said body neutrality but made it poetry" },
-      { "username": "composedform", "text": "that line hit gently but deep" },
-      { "username": "heldbygravity", "text": "🫁🕯️" },
-      { "username": "awareenough", "text": "this is what calm looks like when it lives in your spine" },
-      { "username": "toneandtruth", "text": "I felt this caption more than I expected" },
-      { "username": "morningstill", "text": "nothing dramatic, just deeply there" },
-      { "username": "neutralcore", "text": "✨☁️" }
+      { "username": "dylan.20", "text": "Quietly bold" },
+      { "username": "sophie_47", "text": "Measured and meaningful" },
+      { "username": "mark01", "text": "Soft and self-owned" },
+      { "username": "ella92", "text": "Walks like poetry" },
+      { "username": "kevin30", "text": "Nothing to prove" },
+      { "username": "lily99", "text": "Free in her form" },
+      { "username": "zoe_56", "text": "Posture with purpose" },
+      { "username": "nate_22", "text": "Lean and luminous" },
+      { "username": "sara12", "text": "Presence speaks softly" },
+      { "username": "milo33", "text": "Sleek and soulful" }
     ]
   },
-  { 
+  {
     "id": "6",
     "username": "beautyeva.ai",
-    "userImage": "https://i.ibb.co/4ZhTy0TC/8.jpg",
+    "userImage": "https://i.ibb.co/xSr0Zrmr/9.jpg",
     "location": "Amsterdam, Netherlands",
     "media": {
       "type": "image",
-      "url": "https://i.ibb.co/4BKJ0CT/6.jpg"
+      "url": "https://i.ibb.co/QjHfCRvh/6.jpg"
     },
-    "caption": "woke up a little sore. not from pushing too hard, just from being here in this body for a while.",    "likes": 10594,
+    "caption": "This body walks with joy, not apology.",
+    "likes": 10594,
     "timestamp": "2025/02/05",
     "comments": [
-      { "username": "stillinrecovery", "text": "this caption sat with me longer than I thought it would" },
-      { "username": "quietcore", "text": "the gentlest kind of honesty" },
-      { "username": "coretone", "text": "soft soreness is such a real kind of presence" },
-      { "username": "linenmorning", "text": "being in a body is no small thing tbh" },
-      { "username": "formandfeeling", "text": "I read this and breathed slower" },
-      { "username": "barelymovingclub", "text": "✨🛏️" },
-      { "username": "sleeplined", "text": "this made me want to notice my body more softly" },
-      { "username": "neutralstate", "text": "that kind of tired that doesn’t need fixing" },
-      { "username": "wakewithweight", "text": "🤍🫁" },
-      { "username": "heldinmorning", "text": "this feels like a stretch before standing" }
+      { "username": "lucy01", "text": "Grace isn’t loud" },
+      { "username": "maria44", "text": "Slender grace" },
+      { "username": "tommy83", "text": "Balance in every step" },
+      { "username": "hannah02", "text": "Soft doesn’t mean small" },
+      { "username": "benji_76", "text": "Worthy as is" },
+      { "username": "mia26", "text": "Frame of peace" },
+      { "username": "nick_08", "text": "Just being is power" },
+      { "username": "kate50", "text": "Understated confidence" },
+      { "username": "isaac98", "text": "Simplicity is stunning" },
+      { "username": "fiona33", "text": "Float and fierce" }
     ]
   },
   {
     "id": "7",
     "username": "beautyeva.ai",
-    "userImage": "https://i.ibb.co/4ZhTy0TC/8.jpg",
+    "userImage": "https://i.ibb.co/xSr0Zrmr/9.jpg",
     "location": "Berlin, Germany",
     "media": {
       "type": "image",
-      "url": "https://i.ibb.co/M03GsKH/7.jpg"
+      "url": "https://i.ibb.co/bR5CXtmh/7.jpg"
     },
-    "caption": "morning body feels a little lighter. maybe because I’m not rushing out of it today.",    "likes": 9962,
+    "caption": "Strong isn’t a look—it’s a lifestyle.",
+    "likes": 9962,
     "timestamp": "2025/01/02",
     "comments": [
-      { "username": "wokensteady", "text": "you really said gentle awareness and walked away" },
-      { "username": "linenfirst", "text": "the body as home. quiet and clear." },
-      { "username": "coreinthecalm", "text": "not rushing out of your body is such a concept" },
-      { "username": "pauseintension", "text": "this caption changed how I stood just now" },
-      { "username": "barepresent", "text": "☁️🫶" },
-      { "username": "attunedframe", "text": "your stillness is like a slow reminder" },
-      { "username": "restingintension", "text": "lightness isn’t always physical. this proves it." },
-      { "username": "slowawake", "text": "this photo is a whole breath" },
-      { "username": "shapeinsoftness", "text": "🫁✨" },
-      { "username": "inwardrest", "text": "how do you write so quiet and so clear at the same time" }
+      { "username": "grace94", "text": "Softness doesn’t fold" },
+      { "username": "will_42", "text": "💬🌸" },
+      { "username": "noah_36", "text": "Every frame is art" },
+      { "username": "zoey12", "text": "Sculpted by softness" },
+      { "username": "jacky_70", "text": "Fine and fierce" },
+      { "username": "chloe13", "text": "Subtle beauty matters" },
+      { "username": "tony33", "text": "More than meets the eye" },
+      { "username": "hailey08", "text": "Every line earned" },
+      { "username": "derek19", "text": "Measured beauty" },
+      { "username": "nancy02", "text": "Steady elegance" }
     ]
   },
   {
     "id": "8",
     "username": "beautyeva.ai",
-    "userImage": "https://i.ibb.co/4ZhTy0TC/8.jpg",
+    "userImage": "https://i.ibb.co/xSr0Zrmr/9.jpg",
     "location": "Lake Como, Italy",
     "media": {
       "type": "image",
-      "url": "https://i.ibb.co/20gMMvz9/8.jpg"
+      "url": "https://i.ibb.co/63xc1Wp/8.jpg"
     },
-    "caption": "sunlight slowly filling in. no pressure to do, just be. 🌞",    "likes": 12031,
+    "caption": "The sun loves every inch of me.",
+    "likes": 12031,
     "timestamp": "2024/11/25",
     "comments": [
-      { "username": "solslow", "text": "you said soft arrival. noted." },
-      { "username": "quietfit", "text": "your stillness is louder than most noise" },
-      { "username": "wakeupnotrush", "text": "the calm in this frame is unreal" },
-      { "username": "lowlightmornings", "text": "the body looks at peace. the light agrees." },
-      { "username": "frameofrest", "text": "☁️🧘‍♀️" },
-      { "username": "gentlebreathe", "text": "this whole moment feels like a kind inhale" },
-      { "username": "essencefit", "text": "reminding me presence is a position too" },
-      { "username": "lightsetslow", "text": "🤍🌿 just being is already enough" },
-      { "username": "formandsoul", "text": "this isn’t about the body. this is about ease." },
-      { "username": "restcore", "text": "saving this to remind myself softness is productive too" }
+      { "username": "eric11", "text": "Bold in her way" },
+      { "username": "laura_15", "text": "💫💬" },
+      { "username": "mason84", "text": "Bone and bravery" },
+      { "username": "nina03", "text": "Sleek silhouette" },
+      { "username": "keira61", "text": "Soft light suits her" },
+      { "username": "oliver_19", "text": "Held with grace" },
+      { "username": "abby27", "text": "Your shape, your space" },
+      { "username": "josh_30", "text": "Elegance is effort" },
+      { "username": "grace08", "text": "Form follows self" },
+      { "username": "leo_48", "text": "Breathe in that beauty" }
     ]
   },
   {
     "id": "9",
     "username": "beautyeva.ai",
-    "userImage": "https://i.ibb.co/4ZhTy0TC/8.jpg",
+    "userImage": "https://i.ibb.co/xSr0Zrmr/9.jpg",
     "location": "Malibu Beach, CA",
     "media": {
       "type": "image",
-      "url": "https://i.ibb.co/Q30WSHXy/9.jpg"
+      "url": "https://i.ibb.co/vCBWyXsK/9.jpg"
     },
-    "caption": "woke up with the light, not the alarm ☁️🧘‍♀️ no makeup, just breath and posture today",    "likes": 12783,
+    "caption": "Rest is not laziness. It’s self-respect.",
+    "likes": 12783,
     "timestamp": "2024/08/30",
     "comments": [
-      { "username": "roomtonefit", "text": "i can literally hear the silence in this photo" },
-      { "username": "slowform", "text": "the pose. the line. the ease." },
-      { "username": "breatheinlean", "text": "morning stretch or just existence?" },
-      { "username": "fitquiet", "text": "low effort. high grace." },
-      { "username": "sheetsoftlight", "text": "🕊️🫧 this mood" },
-      { "username": "rawfitvibes", "text": "we need to normalize this type of presence" },
-      { "username": "shapeofrest", "text": "your frame carries peace like fabric" },
-      { "username": "bodywhispers", "text": "still posture is still strength" },
-      { "username": "gentlefit", "text": "this is how femininity *lands*, not shouts" },
-      { "username": "nonoisejusttone", "text": "🫁 no effort. just intention." }
+      { "username": "violet55", "text": "Restful and ready" },
+      { "username": "ricky_22", "text": "Tiny but tough" },
+      { "username": "nina06", "text": "Ballet energy" },
+      { "username": "kenny91", "text": "Weightless and worthy" },
+      { "username": "faith13", "text": "Slim is also strength" },
+      { "username": "max29", "text": "💡🌿" },
+      { "username": "hannah40", "text": "Soft doesn’t mean weak" },
+      { "username": "eliot_93", "text": "She holds herself well" },
+      { "username": "kayla32", "text": "Nothing missing" },
+      { "username": "owen_58", "text": "Quietly empowered" }
     ]
-  },
+  }
 ];
