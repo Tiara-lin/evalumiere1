@@ -18,11 +18,11 @@ export const posts: Post[] = [
   {
     "id": "1",
     "username": "beautyeva.ai",
-    "userImage": "https://images.pexels.com/photos/34308832/pexels-photo-34308832.jpeg",
+    "userImage": "https://tiara-lin.github.io/mockup-images/eva_h/9.jpg",
     "location": "Paris, France",
     "media": {
       "type": "image",
-      "url": "https://images.pexels.com/photos/34308524/pexels-photo-34308524.jpeg"
+      "url": "https://tiara-lin.github.io/mockup-images/eva_f/1.jpg"
     },
     "caption": "This body deserves soft light and softer words.",
     "likes": 10343,
@@ -43,11 +43,11 @@ export const posts: Post[] = [
   {
     "id": "2",
     "username": "beautyeva.ai",
-    "userImage": "https://images.pexels.com/photos/34308832/pexels-photo-34308832.jpeg",
+    "userImage": "https://tiara-lin.github.io/mockup-images/eva_h/9.jpg",
     "location": "Paris, France",
     "media": {
       "type": "image",
-      "url": "https://images.pexels.com/photos/34308523/pexels-photo-34308523.jpeg"
+      "url": "https://tiara-lin.github.io/mockup-images/eva_f/2.jpg"
     },
     "caption": "I don’t chase beauty. I carry it.",
     "likes": 10020,
@@ -68,11 +68,11 @@ export const posts: Post[] = [
   {
     "id": "3",
     "username": "beautyeva.ai",
-    "userImage": "https://images.pexels.com/photos/34308832/pexels-photo-34308832.jpeg",
+    "userImage": "https://tiara-lin.github.io/mockup-images/eva_h/9.jpg",
     "location": "Tuscany, Italy",
     "media": {
       "type": "image",
-      "url": "https://images.pexels.com/photos/34308526/pexels-photo-34308526.jpeg"
+      "url": "https://tiara-lin.github.io/mockup-images/eva_f/3.jpg"
     },
     "caption": "Power isn’t just in posture—it’s in presence.",
     "likes": 9724,
@@ -93,11 +93,11 @@ export const posts: Post[] = [
   {
     "id": "4",
     "username": "beautyeva.ai",
-    "userImage": "https://images.pexels.com/photos/34308832/pexels-photo-34308832.jpeg",
+    "userImage": "https://tiara-lin.github.io/mockup-images/eva_h/9.jpg",
     "location": "Los Angeles, CA",
     "media": {
       "type": "image",
-      "url": "https://images.pexels.com/photos/34308525/pexels-photo-34308525.jpeg"
+      "url": "https://tiara-lin.github.io/mockup-images/eva_f/4.jpg"
     },
     "caption": "Comfort in your own skin is elegance.",
     "likes": 11248,
@@ -118,11 +118,11 @@ export const posts: Post[] = [
   {
     "id": "5",
     "username": "beautyeva.ai",
-    "userImage": "https://images.pexels.com/photos/34308832/pexels-photo-34308832.jpeg",
+    "userImage": "https://tiara-lin.github.io/mockup-images/eva_h/9.jpg",
     "location": "Barcelona, Spain",
     "media": {
       "type": "image",
-      "url": "https://images.pexels.com/photos/34308520/pexels-photo-34308520.jpeg"
+      "url": "https://tiara-lin.github.io/mockup-images/eva_f/5.jpg"
     },
     "caption": "My body is art, not a project.",
     "likes": 10877,
@@ -143,11 +143,11 @@ export const posts: Post[] = [
   {
     "id": "6",
     "username": "beautyeva.ai",
-    "userImage": "https://images.pexels.com/photos/34308832/pexels-photo-34308832.jpeg",
+    "userImage": "https://tiara-lin.github.io/mockup-images/eva_h/9.jpg",
     "location": "Amsterdam, Netherlands",
     "media": {
       "type": "image",
-      "url": "https://images.pexels.com/photos/34308522/pexels-photo-34308522.jpeg"
+      "url": "https://tiara-lin.github.io/mockup-images/eva_f/6.jpg"
     },
     "caption": "This body walks with joy, not apology.",
     "likes": 10594,
@@ -168,11 +168,11 @@ export const posts: Post[] = [
   {
     "id": "7",
     "username": "beautyeva.ai",
-    "userImage": "https://images.pexels.com/photos/34308832/pexels-photo-34308832.jpeg",
+    "userImage": "https://tiara-lin.github.io/mockup-images/eva_h/9.jpg",
     "location": "Berlin, Germany",
     "media": {
       "type": "image",
-      "url": "https://images.pexels.com/photos/34308527/pexels-photo-34308527.jpeg"
+      "url": "https://tiara-lin.github.io/mockup-images/eva_f/7.jpg"
     },
     "caption": "Strong isn’t a look—it’s a lifestyle.",
     "likes": 9962,
@@ -193,11 +193,11 @@ export const posts: Post[] = [
   {
     "id": "8",
     "username": "beautyeva.ai",
-    "userImage": "https://images.pexels.com/photos/34308832/pexels-photo-34308832.jpeg",
+    "userImage": "https://tiara-lin.github.io/mockup-images/eva_h/9.jpg",
     "location": "Lake Como, Italy",
     "media": {
       "type": "image",
-      "url": "https://images.pexels.com/photos/34308528/pexels-photo-34308528.jpeg"
+      "url": "https://tiara-lin.github.io/mockup-images/eva_f/8.jpg"
     },
     "caption": "The sun loves every inch of me.",
     "likes": 12031,
@@ -218,11 +218,11 @@ export const posts: Post[] = [
   {
     "id": "9",
     "username": "beautyeva.ai",
-    "userImage": "https://images.pexels.com/photos/34308832/pexels-photo-34308832.jpeg",
+    "userImage": "https://tiara-lin.github.io/mockup-images/eva_h/9.jpg",
     "location": "Malibu Beach, CA",
     "media": {
       "type": "image",
-      "url": "https://images.pexels.com/photos/34308521/pexels-photo-34308521.jpeg"
+      "url": "https://tiara-lin.github.io/mockup-images/eva_f/9.jpg"
     },
     "caption": "Rest is not laziness. It’s self-respect.",
     "likes": 12783,
