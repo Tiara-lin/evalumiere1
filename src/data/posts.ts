@@ -19,25 +19,25 @@ export const posts: Post[] = [
     "id": "1",
     "username": "beautyeva.ai",
     "userImage": "https://tiara-lin.github.io/mockup-images/eva_h/9.jpg",
-    "location": "Paris, France",
+    "location": "Tuscany, Italy",
     "media": {
       "type": "image",
-      "url": "https://tiara-lin.github.io/mockup-images/eva_f/1.jpg"
+      "url": "https://tiara-lin.github.io/mockup-images/eva_f/3.jpg"
     },
-    "caption": "This body deserves soft light and softer words.",
-    "likes": 10343,
-    "timestamp": "2 HOURS AGO",
+    "caption": "Power isn’t just in posture—it’s in presence.",
+    "likes": 9724,
+    "timestamp": "2025/04/10",
     "comments": [
-      { "username": "zoe16", "text": "Unfolding beauty" },
-      { "username": "daniel89", "text": "Free in stillness" },
-      { "username": "amber26", "text": "Serene presence" },
-      { "username": "colin02", "text": "She glows in lightness" },
-      { "username": "ivy33", "text": "Quiet grace radiates" },
-      { "username": "brian_81", "text": "Subtle power flows" },
-      { "username": "luna78", "text": "Floaty + fierce" },
-      { "username": "harry90", "text": "Elegant without effort" },
-      { "username": "melissa13", "text": "Gentle is bold" },
-      { "username": "felix_05", "text": "Small frame, strong soul" }
+      { "username": "ivy25", "text": "Light, not lacking" },
+      { "username": "leo_52", "text": "Every curve belongs" },
+      { "username": "faye_67", "text": "Natural and new" },
+      { "username": "ryan94", "text": "Poised with purpose" },
+      { "username": "matt.47", "text": "Every inch earned" },
+      { "username": "amy_71", "text": "Stillness has strength" },
+      { "username": "luke23", "text": "Body is enough" },
+      { "username": "jake.12", "text": "Elegantly held" },
+      { "username": "faye_28", "text": "Float and flow" },
+      { "username": "amy14", "text": "Lines of light" }
     ]
   },
   {
@@ -69,25 +69,25 @@ export const posts: Post[] = [
     "id": "3",
     "username": "beautyeva.ai",
     "userImage": "https://tiara-lin.github.io/mockup-images/eva_h/9.jpg",
-    "location": "Tuscany, Italy",
+    "location": "Paris, France",
     "media": {
       "type": "image",
-      "url": "https://tiara-lin.github.io/mockup-images/eva_f/3.jpg"
+      "url": "https://tiara-lin.github.io/mockup-images/eva_f/1.jpg"
     },
-    "caption": "Power isn’t just in posture—it’s in presence.",
-    "likes": 9724,
-    "timestamp": "2025/04/10",
+    "caption": "This body deserves soft light and softer words.",
+    "likes": 10343,
+    "timestamp": "2 HOURS AGO",
     "comments": [
-      { "username": "ivy25", "text": "Light, not lacking" },
-      { "username": "leo_52", "text": "Every curve belongs" },
-      { "username": "faye_67", "text": "Natural and new" },
-      { "username": "ryan94", "text": "Poised with purpose" },
-      { "username": "matt.47", "text": "Every inch earned" },
-      { "username": "amy_71", "text": "Stillness has strength" },
-      { "username": "luke23", "text": "Body is enough" },
-      { "username": "jake.12", "text": "Elegantly held" },
-      { "username": "faye_28", "text": "Float and flow" },
-      { "username": "amy14", "text": "Lines of light" }
+      { "username": "zoe16", "text": "Unfolding beauty" },
+      { "username": "daniel89", "text": "Free in stillness" },
+      { "username": "amber26", "text": "Serene presence" },
+      { "username": "colin02", "text": "She glows in lightness" },
+      { "username": "ivy33", "text": "Quiet grace radiates" },
+      { "username": "brian_81", "text": "Subtle power flows" },
+      { "username": "luna78", "text": "Floaty + fierce" },
+      { "username": "harry90", "text": "Elegant without effort" },
+      { "username": "melissa13", "text": "Gentle is bold" },
+      { "username": "felix_05", "text": "Small frame, strong soul" }
     ]
   },
   {
