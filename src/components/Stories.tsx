@@ -48,7 +48,7 @@ const Stories: React.FC = () => {
   const stories = [
     {
       username: 'beautyeva.ai',
-      imageUrl: 'https://tiara-lin.github.io/mockup-images/eva_h/9.jpg',
+      imageUrl: 'https://tiara-lin.github.io/mockup-images/eva_mixed/9.jpg',
       isViewed: true
     },
     {

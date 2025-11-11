@@ -47,7 +47,7 @@ function App() {
             <Profile 
               username="beautyeva.ai"
               name="Eva Lumiere"
-              imageUrl="https://tiara-lin.github.io/mockup-images/eva_h/9.jpg"
+              imageUrl="https://tiara-lin.github.io/mockup-images/eva_mixed/9.jpg"
             />
             <Suggestions />
             <Footer />
