@@ -103,24 +103,29 @@ app.post('/api/track/session', async (req, res) => {
   try {
     const ip_address = getClientIP(req);
     const device_info = getDeviceInfo(req);
-    const { page_url, uuid, pid } = req.body;
+    // ✅ 直接使用前端決定的 uuid_final（優先），或舊版本的 uuid / pid
+    const { page_url, uuid_final, uuid_from_localStorage, pid_from_query, uuid, pid } = req.body;
 
-    // ✅ 決定最終 UUID
-    const uuidInfo = resolveUUID(pid, uuid);
+    // 相容舊版本：若前端還沒更新，用舊邏輯
+    let finalUuidInfo = { uuid_final, pid_from_query, uuid_from_localStorage };
+    if (!uuid_final) {
+      finalUuidInfo = resolveUUID(pid || pid_from_query, uuid || uuid_from_localStorage);
+    }
 
     const sessionData = {
       ip_address,
       session_start: new Date(),
       page_url,
-      uuid_final: uuidInfo.uuid_final,
-      pid_from_query: uuidInfo.pid_from_query,
-      uuid_from_localStorage: uuidInfo.uuid_from_localStorage,
+      uuid_final: finalUuidInfo.uuid_final,
+      pid_from_query: finalUuidInfo.pid_from_query,
+      uuid_from_localStorage: finalUuidInfo.uuid_from_localStorage,
       // ⚠️ 保留原欄位以向後相容
-      uuid: uuidInfo.uuid_final,
+      uuid: finalUuidInfo.uuid_final,
       ...device_info,
       session_id: `${ip_address}_${Date.now()}`
     };
 
+    console.log('[SESSION DATA]', sessionData);
     await db.collection('user_sessions').insertOne(sessionData);
 
     res.json({ success: true, session_id: sessionData.session_id });
@@ -134,19 +139,23 @@ app.post('/api/track/interaction', async (req, res) => {
   try {
     const ip_address = getClientIP(req);
     const device_info = getDeviceInfo(req);
-    const { action_type, post_id, post_username, session_id, additional_data, uuid, pid } = req.body;
+    // ✅ 直接使用前端決定的 uuid_final（優先），或舊版本的 uuid / pid
+    const { action_type, post_id, post_username, session_id, additional_data, uuid_final, uuid_from_localStorage, pid_from_query, uuid, pid } = req.body;
 
     console.log('✅ Received interaction:', req.body);
 
-    // ✅ 決定最終 UUID
-    const uuidInfo = resolveUUID(pid, uuid);
+    // 相容舊版本：若前端還沒更新，用舊邏輯
+    let finalUuidInfo = { uuid_final, pid_from_query, uuid_from_localStorage };
+    if (!uuid_final) {
+      finalUuidInfo = resolveUUID(pid, uuid);
+    }
 
     const interactionData = {
-      uuid_final: uuidInfo.uuid_final,
-      pid_from_query: uuidInfo.pid_from_query,
-      uuid_from_localStorage: uuidInfo.uuid_from_localStorage,
+      uuid_final: finalUuidInfo.uuid_final,
+      pid_from_query: finalUuidInfo.pid_from_query,
+      uuid_from_localStorage: finalUuidInfo.uuid_from_localStorage,
       // ⚠️ 保留原欄位以向後相容
-      uuid: uuidInfo.uuid_final,
+      uuid: finalUuidInfo.uuid_final,
       ip_address,
       action_type,
       post_id,
@@ -157,6 +166,7 @@ app.post('/api/track/interaction', async (req, res) => {
       ...device_info
     };
 
+    console.log('[INTERACTION DATA]', interactionData);
     await db.collection('user_interactions').insertOne(interactionData);
 
     res.json({ success: true, message: 'Interaction tracked successfully' });
@@ -170,17 +180,21 @@ app.post('/api/track/post-view', async (req, res) => {
   try {
     const ip_address = getClientIP(req);
     const device_info = getDeviceInfo(req);
-    const { post_id, post_username, session_id, view_duration, scroll_percentage, media_type, uuid, pid } = req.body;
+    // ✅ 直接使用前端決定的 uuid_final（優先），或舊版本的 uuid / pid
+    const { post_id, post_username, session_id, view_duration, scroll_percentage, media_type, uuid_final, uuid_from_localStorage, pid_from_query, uuid, pid } = req.body;
 
-    // ✅ 決定最終 UUID
-    const uuidInfo = resolveUUID(pid, uuid);
+    // 相容舊版本：若前端還沒更新，用舊邏輯
+    let finalUuidInfo = { uuid_final, pid_from_query, uuid_from_localStorage };
+    if (!uuid_final) {
+      finalUuidInfo = resolveUUID(pid, uuid);
+    }
 
     const viewData = {
-      uuid_final: uuidInfo.uuid_final,
-      pid_from_query: uuidInfo.pid_from_query,
-      uuid_from_localStorage: uuidInfo.uuid_from_localStorage,
+      uuid_final: finalUuidInfo.uuid_final,
+      pid_from_query: finalUuidInfo.pid_from_query,
+      uuid_from_localStorage: finalUuidInfo.uuid_from_localStorage,
       // ⚠️ 保留原欄位以向後相容
-      uuid: uuidInfo.uuid_final,
+      uuid: finalUuidInfo.uuid_final,
       ip_address,
       action_type: 'post_view',
       post_id,
@@ -193,6 +207,7 @@ app.post('/api/track/post-view', async (req, res) => {
       ...device_info
     };
 
+    console.log('[POST VIEW DATA]', viewData);
     await db.collection('user_interactions').insertOne(viewData);
 
     res.json({ success: true, message: 'Post view tracked successfully' });
