@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useRef } from 'react';
 import axios from 'axios';
 import { UUIDInfo, getFinalUUIDInfo } from '../utils/uuidResolver';
 
@@ -43,7 +43,7 @@ export const useAnalytics = (uuidInfo?: UUIDInfo): AnalyticsHook => {
     }
 
     // ✅ 使用全局 FINAL_UUID，不再異步讀取
-    const { uuid_final, pid_from_query, uuid_from_localStorage } = uuidInfoRef.current;
+    const uuid_final = uuidInfoRef.current.uuid_final;
 
     if (!uuid_final) {
       console.warn('⚠️ Invalid or missing FINAL_UUID:', uuid_final);
@@ -53,12 +53,7 @@ export const useAnalytics = (uuidInfo?: UUIDInfo): AnalyticsHook => {
     const payload = {
       page_url: window.location.href,
       session_id: sessionId || null,
-      uuid_final,
-      pid_from_query,
-      uuid_from_localStorage,
-      // ⚠️ 保留原欄位以向後相容
-      uuid: uuid_final,
-      pid: pid_from_query,
+      uuid_final, // ✅ 只發送 uuid_final（後端會收為 uuid_final 或相容舊版的 uuid）
     };
 
     console.log('[TRACK SESSION PAYLOAD]', payload);
@@ -117,7 +112,7 @@ export const useAnalytics = (uuidInfo?: UUIDInfo): AnalyticsHook => {
     }
 
     // ✅ 使用全局 FINAL_UUID
-    const { uuid_final, pid_from_query, uuid_from_localStorage } = uuidInfoRef.current;
+    const uuid_final = uuidInfoRef.current.uuid_final;
 
     const payload = {
       session_id: sessionId,
@@ -125,12 +120,7 @@ export const useAnalytics = (uuidInfo?: UUIDInfo): AnalyticsHook => {
       post_id: postId,
       post_username: postUsername,
       additional_data: additionalData,
-      uuid_final,
-      pid_from_query,
-      uuid_from_localStorage,
-      // ⚠️ 保留原欄位以向後相容
-      uuid: uuid_final,
-      pid: pid_from_query,
+      uuid_final, // ✅ 只發送 uuid_final
     };
 
     console.log('[TRACK INTERACTION PAYLOAD]', payload);
@@ -157,7 +147,7 @@ export const useAnalytics = (uuidInfo?: UUIDInfo): AnalyticsHook => {
     }
 
     // ✅ 使用全局 FINAL_UUID
-    const { uuid_final, pid_from_query, uuid_from_localStorage } = uuidInfoRef.current;
+    const uuid_final = uuidInfoRef.current.uuid_final;
 
     const payload = {
       session_id: sessionId,
@@ -166,12 +156,7 @@ export const useAnalytics = (uuidInfo?: UUIDInfo): AnalyticsHook => {
       view_duration: viewDuration,
       scroll_percentage: scrollPercentage,
       media_type: mediaType,
-      uuid_final,
-      pid_from_query,
-      uuid_from_localStorage,
-      // ⚠️ 保留原欄位以向後相容
-      uuid: uuid_final,
-      pid: pid_from_query,
+      uuid_final, // ✅ 只發送 uuid_final
     };
 
     console.log('[TRACK POST VIEW PAYLOAD]', payload);

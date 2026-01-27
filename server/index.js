@@ -75,52 +75,29 @@ function isValidUUID(uuid) {
   return /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(uuid);
 }
 
-// ✅ 決定最終 UUID 的邏輯
-function resolveUUID(pidFromQuery, uuidFromLocalStorage) {
-  let pidFromQuery_ = pidFromQuery;
-  let uuidFromLocalStorage_ = uuidFromLocalStorage;
-  let uuidFinal = null;
-
-  // 優先使用 pid_from_query（若合法）
-  if (pidFromQuery_ && isValidUUID(pidFromQuery_)) {
-    uuidFinal = pidFromQuery_;
-  } else if (uuidFromLocalStorage_ && isValidUUID(uuidFromLocalStorage_)) {
-    uuidFinal = uuidFromLocalStorage_;
-  }
-
-  console.log('[UUID DEBUG] pid_from_query=', pidFromQuery_);
-  console.log('[UUID DEBUG] uuid_from_localStorage=', uuidFromLocalStorage_);
-  console.log('[UUID DEBUG] uuid_final=', uuidFinal);
-
-  return {
-    uuid_final: uuidFinal,
-    pid_from_query: pidFromQuery_,
-    uuid_from_localStorage: uuidFromLocalStorage_
-  };
-}
-
 app.post('/api/track/session', async (req, res) => {
   try {
     const ip_address = getClientIP(req);
     const device_info = getDeviceInfo(req);
-    // ✅ 直接使用前端決定的 uuid_final（優先），或舊版本的 uuid / pid
-    const { page_url, uuid_final, uuid_from_localStorage, pid_from_query, uuid, pid } = req.body;
+    // ✅ 只接受 uuid_final（或舊版相容的 uuid）
+    const { page_url, uuid_final, uuid } = req.body;
 
-    // 相容舊版本：若前端還沒更新，用舊邏輯
-    let finalUuidInfo = { uuid_final, pid_from_query, uuid_from_localStorage };
-    if (!uuid_final) {
-      finalUuidInfo = resolveUUID(pid || pid_from_query, uuid || uuid_from_localStorage);
+    // ✅ 使用 uuid_final（優先），或舊版 uuid；必須存在且合法
+    const finalUUID = uuid_final || uuid;
+
+    if (!finalUUID || !isValidUUID(finalUUID)) {
+      console.warn('❌ Invalid or missing uuid_final:', { uuid_final, uuid });
+      return res.status(400).json({ 
+        success: false, 
+        error: 'Missing or invalid uuid_final' 
+      });
     }
 
     const sessionData = {
       ip_address,
       session_start: new Date(),
       page_url,
-      uuid_final: finalUuidInfo.uuid_final,
-      pid_from_query: finalUuidInfo.pid_from_query,
-      uuid_from_localStorage: finalUuidInfo.uuid_from_localStorage,
-      // ⚠️ 保留原欄位以向後相容
-      uuid: finalUuidInfo.uuid_final,
+      uuid: finalUUID, // ✅ 單一 uuid 欄位
       ...device_info,
       session_id: `${ip_address}_${Date.now()}`
     };
@@ -139,23 +116,24 @@ app.post('/api/track/interaction', async (req, res) => {
   try {
     const ip_address = getClientIP(req);
     const device_info = getDeviceInfo(req);
-    // ✅ 直接使用前端決定的 uuid_final（優先），或舊版本的 uuid / pid
-    const { action_type, post_id, post_username, session_id, additional_data, uuid_final, uuid_from_localStorage, pid_from_query, uuid, pid } = req.body;
+    // ✅ 只接受 uuid_final（或舊版相容的 uuid）
+    const { action_type, post_id, post_username, session_id, additional_data, uuid_final, uuid } = req.body;
 
     console.log('✅ Received interaction:', req.body);
 
-    // 相容舊版本：若前端還沒更新，用舊邏輯
-    let finalUuidInfo = { uuid_final, pid_from_query, uuid_from_localStorage };
-    if (!uuid_final) {
-      finalUuidInfo = resolveUUID(pid, uuid);
+    // ✅ 使用 uuid_final（優先），或舊版 uuid；必須存在且合法
+    const finalUUID = uuid_final || uuid;
+
+    if (!finalUUID || !isValidUUID(finalUUID)) {
+      console.warn('❌ Invalid or missing uuid_final:', { uuid_final, uuid });
+      return res.status(400).json({ 
+        success: false, 
+        error: 'Missing or invalid uuid_final' 
+      });
     }
 
     const interactionData = {
-      uuid_final: finalUuidInfo.uuid_final,
-      pid_from_query: finalUuidInfo.pid_from_query,
-      uuid_from_localStorage: finalUuidInfo.uuid_from_localStorage,
-      // ⚠️ 保留原欄位以向後相容
-      uuid: finalUuidInfo.uuid_final,
+      uuid: finalUUID, // ✅ 單一 uuid 欄位
       ip_address,
       action_type,
       post_id,
@@ -180,21 +158,22 @@ app.post('/api/track/post-view', async (req, res) => {
   try {
     const ip_address = getClientIP(req);
     const device_info = getDeviceInfo(req);
-    // ✅ 直接使用前端決定的 uuid_final（優先），或舊版本的 uuid / pid
-    const { post_id, post_username, session_id, view_duration, scroll_percentage, media_type, uuid_final, uuid_from_localStorage, pid_from_query, uuid, pid } = req.body;
+    // ✅ 只接受 uuid_final（或舊版相容的 uuid）
+    const { post_id, post_username, session_id, view_duration, scroll_percentage, media_type, uuid_final, uuid } = req.body;
 
-    // 相容舊版本：若前端還沒更新，用舊邏輯
-    let finalUuidInfo = { uuid_final, pid_from_query, uuid_from_localStorage };
-    if (!uuid_final) {
-      finalUuidInfo = resolveUUID(pid, uuid);
+    // ✅ 使用 uuid_final（優先），或舊版 uuid；必須存在且合法
+    const finalUUID = uuid_final || uuid;
+
+    if (!finalUUID || !isValidUUID(finalUUID)) {
+      console.warn('❌ Invalid or missing uuid_final:', { uuid_final, uuid });
+      return res.status(400).json({ 
+        success: false, 
+        error: 'Missing or invalid uuid_final' 
+      });
     }
 
     const viewData = {
-      uuid_final: finalUuidInfo.uuid_final,
-      pid_from_query: finalUuidInfo.pid_from_query,
-      uuid_from_localStorage: finalUuidInfo.uuid_from_localStorage,
-      // ⚠️ 保留原欄位以向後相容
-      uuid: finalUuidInfo.uuid_final,
+      uuid: finalUUID, // ✅ 單一 uuid 欄位
       ip_address,
       action_type: 'post_view',
       post_id,

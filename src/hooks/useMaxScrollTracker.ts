@@ -81,7 +81,7 @@ export const useMaxScrollTracker = (uuidInfo?: UUIDInfo) => {
         null;
 
       // ✅ 使用全局 FINAL_UUID
-      const { uuid_final, pid_from_query, uuid_from_localStorage } = uuidInfoRef.current;
+      const uuid_final = uuidInfoRef.current.uuid_final;
 
       console.log('🚩 using sessionId:', sid);
 
@@ -91,11 +91,7 @@ export const useMaxScrollTracker = (uuidInfo?: UUIDInfo) => {
       postToParent(finalPct, 'SCROLL_FINAL');
 
       const payload = JSON.stringify({
-        uuid_final,
-        pid_from_query,
-        uuid_from_localStorage,
-        // ⚠️ 保留原欄位以向後相容
-        uuid: uuid_final,
+        uuid_final, // ✅ 只發送 uuid_final
         session_id: sid,
         action_type: 'final_max_scroll',
         additional_data: {
